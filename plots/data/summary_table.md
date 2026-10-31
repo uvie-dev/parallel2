@@ -1,0 +1,101 @@
+ workload   order   size  cv_target  cv_measured   sched  best_grain  t_par_s  t_par_std_s  speedup  efficiency  imbalance_pct  idle_pct
+   mandel natural    300      -1.00        2.187 dynamic          64   0.0187       0.0005     3.41       0.854            0.0       0.2
+   mandel natural    300      -1.00        2.187  guided        4096   0.0284       0.0014     2.24       0.560           59.8      37.7
+   mandel natural    300      -1.00        2.187  static           2   0.0321       0.0000     1.99       0.497           93.0      48.9
+   mandel natural    300      -1.00        2.187 static1           2   0.0189       0.0004     3.36       0.841            3.4       6.0
+   mandel natural    300      -1.00        2.187    task        1024   0.0196       0.0001     3.25       0.813            0.3       0.3
+   mandel natural    600      -1.00        2.189 dynamic          64   0.0747       0.0004     3.10       0.774            0.0       0.1
+   mandel natural    600      -1.00        2.189  guided          64   0.1140       0.0006     2.03       0.507           67.9      40.5
+   mandel natural    600      -1.00        2.189  static          64   0.1249       0.0018     1.85       0.463           96.7      49.2
+   mandel natural    600      -1.00        2.189 static1           1   0.0757       0.0009     3.06       0.764            4.1       7.4
+   mandel natural    600      -1.00        2.189    task        4096   0.0752       0.0003     3.08       0.769            0.2       0.2
+   mandel natural   1200      -1.00        2.189 dynamic        1024   0.2880       0.0016     3.24       0.810            0.0       0.0
+   mandel natural   1200      -1.00        2.189  guided          32   0.4423       0.0059     2.11       0.527           71.7      41.8
+   mandel natural   1200      -1.00        2.189  static           8   0.4921       0.0013     1.90       0.474           94.0      48.7
+   mandel natural   1200      -1.00        2.189 static1          32   0.2991       0.0015     3.12       0.780            2.4       2.5
+   mandel natural   1200      -1.00        2.189    task        4096   0.2938       0.0016     3.18       0.794            0.0       0.0
+    prime natural  20000      -1.00        3.851 dynamic          32   0.0123       0.0005     3.24       0.809            0.4       0.5
+    prime natural  20000      -1.00        3.851  guided          32   0.0127       0.0004     3.13       0.783            0.4       0.5
+    prime natural  20000      -1.00        3.851  static           1   0.0115       0.0006     3.46       0.866            4.7       5.6
+    prime natural  20000      -1.00        3.851 static1           2   0.0129       0.0004     3.08       0.771            4.8       5.3
+    prime natural  20000      -1.00        3.851    task          16   0.0128       0.0002     3.12       0.779            0.5       1.1
+    prime natural  80000      -1.00        3.838 dynamic          16   0.0475       0.0002     3.52       0.881            0.1       0.3
+    prime natural  80000      -1.00        3.838  guided         128   0.0475       0.0004     3.52       0.880            0.4       0.5
+    prime natural  80000      -1.00        3.838  static           1   0.0467       0.0024     3.58       0.896            4.6       5.4
+    prime natural  80000      -1.00        3.838 static1           4   0.0479       0.0012     3.49       0.873            4.0       4.2
+    prime natural  80000      -1.00        3.838    task         256   0.0475       0.0052     3.52       0.880            0.2       0.3
+    prime natural 320000      -1.00        3.848 dynamic          16   0.1897       0.0101     3.31       0.827            0.0       0.2
+    prime natural 320000      -1.00        3.848  guided         128   0.1899       0.0025     3.30       0.826            0.1       0.1
+    prime natural 320000      -1.00        3.848  static           8   0.2096       0.0066     2.99       0.748            5.1       5.0
+    prime natural 320000      -1.00        3.848 static1         256   0.1922       0.0018     3.26       0.816            1.4       1.4
+    prime natural 320000      -1.00        3.848    task         128   0.1900       0.0011     3.30       0.825            0.1       0.2
+synthetic  random  10000       0.00        0.000 dynamic           4   0.0232       0.0001     3.70       0.926            0.1       0.2
+synthetic  random  10000       0.00        0.000  guided           1   0.0237       0.0006     3.63       0.909            0.0       0.3
+synthetic  random  10000       0.00        0.000  static           2   0.0234       0.0003     3.68       0.919            5.2       5.1
+synthetic  random  10000       0.00        0.000 static1          32   0.0240       0.0017     3.58       0.895            4.0       3.8
+synthetic  random  10000       0.00        0.000    task          16   0.0238       0.0002     3.62       0.904            0.3       0.5
+synthetic  random  10000       0.25        0.250 dynamic           4   0.0231       0.0006     3.95       0.989            0.1       0.3
+synthetic  random  10000       0.25        0.250  guided          16   0.0230       0.0005     3.97       0.993            0.3       0.3
+synthetic  random  10000       0.25        0.250  static          64   0.0233       0.0002     3.91       0.978            2.0       2.0
+synthetic  random  10000       0.25        0.250 static1          64   0.0233       0.0013     3.92       0.980            2.9       2.8
+synthetic  random  10000       0.25        0.250    task           8   0.0234       0.0003     3.90       0.975            0.2       0.5
+synthetic  random  10000       1.00        0.978 dynamic           8   0.0235       0.0002     3.96       0.991            0.1       0.2
+synthetic  random  10000       1.00        0.978  guided           2   0.0238       0.0002     3.90       0.975            0.0       0.2
+synthetic  random  10000       1.00        0.978  static           1   0.0237       0.0009     3.92       0.980            4.9       4.9
+synthetic  random  10000       1.00        0.978 static1           8   0.0241       0.0004     3.86       0.965            3.7       3.6
+synthetic  random  10000       1.00        0.978    task           1   0.0275       0.0004     3.39       0.847            0.7       3.0
+synthetic  random  10000       2.00        1.814 dynamic           1   0.0272       0.0009     3.73       0.933            0.0       0.6
+synthetic  random  10000       2.00        1.814  guided           4   0.0276       0.0017     3.67       0.919            1.0       1.1
+synthetic  random  10000       2.00        1.814  static           4   0.0239       0.0003     4.25       1.062            5.9       5.6
+synthetic  random  10000       2.00        1.814 static1           1   0.0241       0.0008     4.21       1.052            4.3       4.4
+synthetic  random  10000       2.00        1.814    task           8   0.0272       0.0003     3.73       0.931            0.2       0.5
+synthetic  random  40000       0.00        0.000 dynamic           1   0.1042       0.0009     3.48       0.870            0.0       0.7
+synthetic  random  40000       0.00        0.000  guided           8   0.1034       0.0009     3.51       0.877            0.0       0.1
+synthetic  random  40000       0.00        0.000  static           1   0.1007       0.0010     3.60       0.900            2.7       2.9
+synthetic  random  40000       0.00        0.000 static1         256   0.1064       0.0002     3.41       0.852            1.8       1.8
+synthetic  random  40000       0.00        0.000    task         128   0.1037       0.0012     3.50       0.875            0.5       0.5
+synthetic  random  40000       0.25        0.252 dynamic           8   0.1034       0.0003     3.46       0.866            0.0       0.1
+synthetic  random  40000       0.25        0.252  guided           1   0.1038       0.0027     3.45       0.862            0.0       0.3
+synthetic  random  40000       0.25        0.252  static           1   0.0968       0.0022     3.70       0.925            4.1       4.2
+synthetic  random  40000       0.25        0.252 static1         128   0.1049       0.0016     3.41       0.853            2.2       2.2
+synthetic  random  40000       0.25        0.252    task          32   0.1075       0.0010     3.33       0.833            0.0       0.2
+synthetic  random  40000       1.00        0.998 dynamic           2   0.1032       0.0010     3.50       0.876            0.0       0.3
+synthetic  random  40000       1.00        0.998  guided        1024   0.1064       0.0023     3.40       0.850            3.0       2.9
+synthetic  random  40000       1.00        0.998  static           1   0.1003       0.0024     3.61       0.902            4.4       4.6
+synthetic  random  40000       1.00        0.998 static1           2   0.1052       0.0007     3.44       0.859            1.3       1.5
+synthetic  random  40000       1.00        0.998    task          32   0.1039       0.0052     3.48       0.870            0.1       0.2
+synthetic  random  40000       2.00        1.914 dynamic          32   0.1054       0.0003     3.21       0.802            0.1       0.2
+synthetic  random  40000       2.00        1.914  guided           1   0.1062       0.0011     3.18       0.796            0.1       0.4
+synthetic  random  40000       2.00        1.914  static           1   0.1009       0.0053     3.35       0.837            4.2       4.3
+synthetic  random  40000       2.00        1.914 static1           4   0.1071       0.0020     3.16       0.789            1.3       1.4
+synthetic  random  40000       2.00        1.914    task         128   0.1060       0.0005     3.19       0.797            0.3       0.4
+synthetic  random 160000       0.00        0.000 dynamic         256   0.3961       0.0075     3.70       0.925            0.2       0.2
+synthetic  random 160000       0.00        0.000  guided           8   0.3969       0.0040     3.69       0.923            0.0       0.0
+synthetic  random 160000       0.00        0.000  static          16   0.3994       0.0071     3.67       0.917            1.2       1.3
+synthetic  random 160000       0.00        0.000 static1           2   0.4020       0.0039     3.64       0.911            1.0       1.2
+synthetic  random 160000       0.00        0.000    task        1024   0.3980       0.0036     3.68       0.920            1.1       1.0
+synthetic  random 160000       0.25        0.249 dynamic         256   0.3982       0.0044     3.50       0.875            0.2       0.2
+synthetic  random 160000       0.25        0.249  guided           2   0.4065       0.0048     3.43       0.857            0.0       0.1
+synthetic  random 160000       0.25        0.249  static           1   0.3933       0.0116     3.54       0.886            1.0       1.3
+synthetic  random 160000       0.25        0.249 static1          32   0.3950       0.0045     3.53       0.882            0.7       0.7
+synthetic  random 160000       0.25        0.249    task         128   0.4086       0.0012     3.41       0.853            0.1       0.2
+synthetic  random 160000       1.00        0.984 dynamic           4   0.4052       0.0018     3.45       0.862            0.0       0.2
+synthetic  random 160000       1.00        0.984  guided         256   0.4055       0.0037     3.44       0.861            0.2       0.2
+synthetic  random 160000       1.00        0.984  static           1   0.4021       0.0166     3.47       0.868            0.5       0.8
+synthetic  random 160000       1.00        0.984 static1           8   0.4084       0.0039     3.42       0.855            2.3       2.3
+synthetic  random 160000       1.00        0.984    task          32   0.4089       0.0124     3.42       0.854            0.1       0.1
+synthetic  random 160000       2.00        1.884 dynamic          16   0.4072       0.0021     3.49       0.872            0.0       0.1
+synthetic  random 160000       2.00        1.884  guided           8   0.4022       0.0059     3.53       0.883            0.2       0.2
+synthetic  random 160000       2.00        1.884  static           1   0.4135       0.0185     3.43       0.859            1.7       1.9
+synthetic  random 160000       2.00        1.884 static1        1024   0.4154       0.0004     3.42       0.855            1.6       1.6
+synthetic  random 160000       2.00        1.884    task          64   0.4075       0.0036     3.48       0.871            0.0       0.1
+synthetic  sorted  40000       1.00        0.998 dynamic           1   0.1017       0.0005     3.53       0.882            0.1       0.7
+synthetic  sorted  40000       1.00        0.998  guided           1   0.1008       0.0011     3.56       0.890            0.1       0.3
+synthetic  sorted  40000       1.00        0.998  static        4096   0.1787       0.0016     2.01       0.502           86.0      46.2
+synthetic  sorted  40000       1.00        0.998 static1           1   0.1028       0.0024     3.49       0.873            3.0       3.2
+synthetic  sorted  40000       1.00        0.998    task           4   0.1033       0.0011     3.47       0.868            0.4       1.0
+synthetic  sorted  40000       2.00        1.914 dynamic           1   0.0979       0.0027     3.64       0.911            0.2       0.9
+synthetic  sorted  40000       2.00        1.914  guided           1   0.0974       0.0018     3.66       0.915            0.2       0.5
+synthetic  sorted  40000       2.00        1.914  static        4096   0.2239       0.0016     1.59       0.398          152.6      60.4
+synthetic  sorted  40000       2.00        1.914 static1           1   0.0946       0.0028     3.77       0.943            3.3       3.5
+synthetic  sorted  40000       2.00        1.914    task           1   0.1040       0.0017     3.43       0.857            1.1       5.8
